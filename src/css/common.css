@@ -16,3 +16,24 @@
     transform: translateX(-50%) translateY(100%) scale(1);
   }
 }
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 10px;
+  row-gap: 10px;
+  margin: 0;
+  padding-left: 0;
+}
+
+.gallery-item {
+  flex-basis: calc((100% - 20px) / 3);
+}
